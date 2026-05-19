@@ -346,19 +346,17 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     welcome_message = f"""স্বাগতম {user.first_name}! 👋
 
-আমি "Bangla chat bot", আপনার বিশ্বস্ত AI আইনি পরামর্শক ও গবেষণা সহকারী (AI Legal Assistant)। ⚖️🤖
+    আমি "Bangla chat bot", আপনার বিশ্বস্ত AI আইনি পরামর্শক ও গবেষণা সহকারী (AI Legal Assistant)। ⚖️🤖
 
-আমি বাংলাদেশের অফিসিয়াল আইন ও রায়ের তথ্যের ভিত্তিতে আপনার যেকোনো আইনি প্রশ্ন বিশ্লেষণ, পরামর্শ এবং ড্রাফটিং-এ সাহায্য করতে পারি।
+    আমি বাংলাদেশের অফিসিয়াল আইন ও রায়ের তথ্যের ভিত্তিতে আপনার যেকোনো আইনি প্রশ্ন বিশ্লেষণ, পরামর্শ এবং ড্রাফটিং-এ সাহায্য করতে পারি।
 
-শুধু আপনার সমস্যা বা প্রশ্নটি লিখুন এবং আমি সাহায্য করব! 💬
+    শুধু আপনার সমস্যা বা প্রশ্নটি লিখুন এবং আমি সাহায্য করব! 💬
 
-কমান্ড:
-/start - শুরু করুন
-/help - সাহায্য পান
-/clear - কথোপকথন রিসেট করুন
-/info - আমার সম্পর্কে জানুন
-
-এই মুহূর্তে সংযুক্ত: Groq AI (Llama 3.3 70B) ✨""" # noqa
+    কমান্ড:
+    /start - শুরু করুন
+    /help - সাহায্য পান
+    /clear - কথোপকথন রিসেট করুন
+    /info - আমার সম্পর্কে জানুন ✨""" # noqa
 
     await update.message.reply_text(welcome_message)
     logger.info(f"User {user.id} started the bot")
@@ -399,7 +397,7 @@ async def info_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 🤖 নাম: Bangla Law Assistant (Bangla chat bot)
 💬 ভাষা: বাংলা (Bengali)
-🧠 প্রযুক্তি: Groq AI (Llama 3.3 70B)
+🧠 প্রযুক্তি: Groq AI
 📡 প্ল্যাটফর্ম: Telegram
 ⚡ গতি: অতি দ্রুত
 🔐 নিরাপদ: হ্যাঁ (আইনি আচরণবিধি সমর্থিত)
